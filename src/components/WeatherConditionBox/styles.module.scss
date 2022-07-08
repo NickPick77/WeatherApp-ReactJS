@@ -1,0 +1,16 @@
+.ContainerCondition {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 0 2vh 0;
+
+  &__Text {
+    font-size: clamp(2em, 2.5vw, 2.5em);
+    color: rgb(8, 106, 197);
+  }
+
+  &__Data {
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}

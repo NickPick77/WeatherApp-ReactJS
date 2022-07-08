@@ -1,0 +1,82 @@
+.cityInfoContainer {
+  width: 90vmin;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 12px rgba(195, 195, 195, 0.3);
+  border-radius: 12px;
+  padding: 2vh 0 2vh 0;
+  background-image: linear-gradient(to top, #dce3e8 0%, #f3fbff 100%);
+  &__Title {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: clamp(1.5em, 5vw, 2em);
+    animation: 0.8s ease-in-out cardRotation;
+    &__Anim {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: clamp(1.5em, 5vw, 2em);
+      visibility: hidden;
+    }
+  }
+  &__Wrapper {
+    width: 85vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 2vh 0 2vh;
+    &__ConditionBox {
+      width: 40vmax;
+      height: 25vmax;
+      display: flex;
+      justify-content: center;
+      gap: 5vmax;
+      animation: 0.8s ease-in-out cardRotation;
+
+      &__Anim {
+        width: 30vmax;
+        height: 25vmax;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        visibility: hidden;
+      }
+      .ConditionBoxDiv {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .dotsContainer {
+    display: flex;
+    gap: 1vh;
+    &__dot {
+      background-color: rgb(120, 120, 120);
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+    }
+    .selected {
+      transition: all 0.3s ease-in-out;
+      background-color: orange;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .cityInfoContainer__Wrapper {
+    justify-content: center;
+  }
+}
+
+@keyframes cardRotation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

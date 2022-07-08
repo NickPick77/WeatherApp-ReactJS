@@ -1,0 +1,20 @@
+.Alert {
+  margin-top: 5px;
+  height: fit-content;
+  width: 300px;
+  background-color: red;
+  clip-path: polygon(
+    0 100%,
+    100% 100%,
+    100% 40%,
+    59% 40%,
+    50% 0,
+    38% 40%,
+    0 40%
+  );
+  position: absolute;
+  p {
+    position: relative;
+    top: 50%;
+  }
+}

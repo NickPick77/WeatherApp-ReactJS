@@ -1,0 +1,85 @@
+.Section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+  width: 90vmin;
+  height: 30vmax;
+
+  background-image: linear-gradient(135deg, #3c8ce7 10%, #00eaff 100%);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(195, 195, 195, 0.3);
+
+  &__Wrapper {
+    display: flex;
+    justify-content: center;
+    //width: 100%;
+    gap: 2vh;
+    padding: 5vmax 0 5vmax 0;
+
+    .Container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 25%;
+      gap: 3vmax;
+      width: 15vmin;
+      //height: 10vmax;
+      background-image: linear-gradient(to top, #dce3e8 0%, #f3fbff 100%);
+      padding: 5vmax 0 5vmax 0;
+      font-size: clamp(0.6em, 3vw, 1em);
+      border-radius: 12px;
+      color: rgba(0, 0, 0, 0.7);
+
+      animation: 0.8s ease-in-out cardRotation;
+      &__Anim {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 25%;
+        gap: 3vmax;
+        width: 12vmin;
+        // height: 15vmax;
+        padding: 5vmax 0 5vmax 0;
+        background-image: linear-gradient(to top, #dce3e8 0%, #f3fbff 100%);
+        // font-size: clamp(0.8em, 3vw, 1em);
+        border-radius: 12px;
+        visibility: hidden;
+      }
+      .Bagde {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+          width: 14vmin;
+        }
+        &__span {
+          display: flex;
+          align-items: center;
+
+          &__thermo {
+            font-size: clamp(1.5em, 5vw, 1.9em);
+            color: rgb(8, 106, 197);
+          }
+          .temp {
+            font-size: clamp(0.8em, 5vw, 1.5em);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes cardRotation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,32 @@
+.cityInfoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: whitesmoke;
+
+  .cityName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__location {
+      font-size: clamp(1em, 5vw, 1.5em);
+      position: relative;
+      right: 1%;
+      color: #ffc600;
+    }
+    &__h1 {
+      display: inline;
+      font-size: clamp(1.5em, 5vw, 1.8em);
+    }
+  }
+  .dateP {
+    padding: 0 0 0 10px;
+    font-size: clamp(1.5em, 3vw, 1.8em);
+  }
+
+  .timeP {
+    padding: 0 0 0 10px;
+    font-size: clamp(0.8em, 3vw, 1.2em);
+  }
+}
