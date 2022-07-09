@@ -1,7 +1,7 @@
 {
   "name": "wheater_react_js",
   "version": "0.1.0",
-  "homepage": "https://nickpick77.github.io/WeatherApp-ReactJS/",
+  "homepage": "nickpick77.github.io/weatherapp-reactjs/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "PUBLIC_URL=https://nickpick77.github.io/edgemony-movie-database-w-React/ react-scripts build",
+    "build": "PUBLIC_URL=https://nickpick77.github.io/weatherapp-reactjs/ react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
