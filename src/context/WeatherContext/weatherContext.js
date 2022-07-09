@@ -1,6 +1,6 @@
 import { createContext, useContext, useReducer } from "react";
 import weatherReducer from "./weatherReducer";
-import { GET } from "../../utils/api.js";
+import { GET_FORECAST } from "../../utils/api.js";
 
 const initialState = {
   loading: false,
@@ -20,7 +20,7 @@ export const WeatherContextProvider = ({ children }) => {
     console.log(cityName);
     dispatch({ type: "WEATHERDATA_FETCH_REQUEST" });
     try {
-      const weatherData = await GET(cityName);
+      const weatherData = await GET_FORECAST(cityName);
       dispatch({ type: "WEATHERDATA_FETCH_SUCCESS", payload: weatherData });
     } catch (error) {
       console.log(state, error);

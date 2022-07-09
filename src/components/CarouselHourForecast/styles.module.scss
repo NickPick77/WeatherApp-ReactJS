@@ -8,7 +8,7 @@
 
   background-image: linear-gradient(135deg, #3c8ce7 10%, #00eaff 100%);
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(195, 195, 195, 0.3);
+  box-shadow: 0 0 6px 1px rgba(70, 70, 70, 0.35);
 
   &__Wrapper {
     display: flex;
@@ -40,7 +40,7 @@
         align-items: center;
         flex: 0 0 25%;
         gap: 3vmax;
-        width: 12vmin;
+        width: 15vmin;
         // height: 15vmax;
         padding: 5vmax 0 5vmax 0;
         background-image: linear-gradient(to top, #dce3e8 0%, #f3fbff 100%);

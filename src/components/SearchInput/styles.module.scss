@@ -1,3 +1,77 @@
+.ContainerSearchInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__input {
+      border-radius: 12px;
+      width: 20vmax;
+      height: 4vmax;
+      padding: 1vmin;
+      outline: none;
+      border: none;
+      font-size: clamp(0.7em, 5vw, 1.2em);
+      animation: 0.3s ease-in-out widthUp;
+    }
+    &__inputHidden {
+      border-radius: 12px;
+      height: 4vmax;
+      padding: 1vmin;
+      font-size: clamp(0.7em, 5vw, 1.2em);
+      animation: 0.3s ease-in-out widthDown;
+      width: 0;
+      color: transparent;
+      background-color: transparent;
+      outline: none;
+      border: none;
+
+      //display: none;
+    }
+    &__submit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      // padding: 0.5vmin 2vmin 0.5vmin 2vmin;
+      border-radius: 50%;
+      width: 4vmax;
+      height: 4vmax;
+      cursor: pointer;
+
+      &__icon {
+        font-size: clamp(1em, 5vw, 1.2em);
+      }
+    }
+    &__submit:hover {
+      transition: all 0.3s ease-in-out;
+      color: white;
+      background-color: orange;
+    }
+  }
+}
+
+.WrapperAutoComplete {
+  list-style: none;
+  background-color: rgb(251, 251, 251);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow: hidden;
+  width: 20vmax;
+  &__li {
+    font-size: clamp(0.7em, 5vw, 1.2em);
+    cursor: pointer;
+  }
+  &__li:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: orange;
+    color: white;
+  }
+}
+
 .Alert {
   margin-top: 5px;
   height: fit-content;
@@ -16,5 +90,23 @@
   p {
     position: relative;
     top: 50%;
+  }
+}
+
+@keyframes widthUp {
+  0% {
+    width: 0vmax;
+  }
+  100% {
+    width: 20vmax;
+  }
+}
+@keyframes widthDown {
+  0% {
+    width: 20vmax;
+    background-color: white;
+  }
+  100% {
+    width: 0vmax;
   }
 }

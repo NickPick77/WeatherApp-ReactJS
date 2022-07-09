@@ -2,22 +2,22 @@ import { useState, useEffect } from "react";
 import { useLocalDate } from "../../utils/hooks";
 import { useWeatherContext } from "../../context/WeatherContext/weatherContext";
 
-import CarouselHourForecast from "../CarouselHourForecast";
+import FutureForecastCard from "../CarouselFutureForecast";
 
 import styles from "./styles.module.scss";
 
 const WeatherCardInfoExt = () => {
   const { weatherStore } = useWeatherContext();
   const [forecastData, setForecastData] = useState();
-  const { hour } = useLocalDate();
-
+  //const { hour } = useLocalDate();
+  console.log(weatherStore.weatherData.forecast.forecastday);
   useEffect(() => {
-    setForecastData(weatherStore.weatherData.forecast.forecastday[0].hour);
+    setForecastData(weatherStore.weatherData.forecast.forecastday);
   }, []);
 
   return (
     <div className={styles.Ext_Container}>
-      {forecastData && <CarouselHourForecast data={[forecastData, hour]} />}
+      {forecastData && <FutureForecastCard data={forecastData} />}
     </div>
   );
 };

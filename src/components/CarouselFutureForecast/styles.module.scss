@@ -1,0 +1,15 @@
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vmin;
+  .Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28vmin;
+    border-radius: 12px;
+    box-shadow: 0 0 6px 1px rgba(70, 70, 70, 0.35);
+    background-image: linear-gradient(135deg, #3c8ce7 10%, #00eaff 100%);
+  }
+}

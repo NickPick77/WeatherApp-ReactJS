@@ -4,9 +4,19 @@
   border-radius: 24px;
 }
 .Show {
-  color: red;
+  font-family: "Nunito", sans-serif;
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+  padding: 2vmin 25vmin 2vmin 25vmin;
+  cursor: pointer;
 }
 
+.Show:hover {
+  transition: all 0.5s ease-in;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .Swiper {
   display: flex;
   justify-content: center;

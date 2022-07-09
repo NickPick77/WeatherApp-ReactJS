@@ -1,5 +1,5 @@
 const BASE_URL =
-  "https://api.weatherapi.com/v1/forecast.json?key=afa4bc66c51b4fa49e1163910221805&lang=it&q=";
+  "https://api.weatherapi.com/v1/forecast.json?key=afa4bc66c51b4fa49e1163910221805&lang=en&days=5&aqi=yes&q=";
 
 const SEARCH_URL =
   "https://api.weatherapi.com/v1/search.json?key=afa4bc66c51b4fa49e1163910221805&q=";
@@ -26,7 +26,8 @@ export const http = async (URL, resource = "", options) => {
   }
 };
 // GET
-export const GET = (resource) => http(BASE_URL, resource, { method: "GET" });
+export const GET_FORECAST = (resource) =>
+  http(BASE_URL, resource, { method: "GET" });
 
 //SEARCH
 export const SEARCH = (resource) =>

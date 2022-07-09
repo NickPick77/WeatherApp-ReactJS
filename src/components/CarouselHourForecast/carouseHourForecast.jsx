@@ -18,7 +18,7 @@ const CarouselHourForecast = ({ data }) => {
   });
   const [touchPosition, setTouchPosition] = useState(0);
   const [slideAnim, setSlideAnim] = useState(true);
-
+  console.log(data);
   const setElemDisplay = () => {
     setDisplayElem(data[0].slice(position, limit));
 

@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 12px rgba(195, 195, 195, 0.3);
+  box-shadow: 0 0 6px 1px rgba(70, 70, 70, 0.35);
   border-radius: 12px;
   padding: 2vh 0 2vh 0;
   background-image: linear-gradient(to top, #dce3e8 0%, #f3fbff 100%);
@@ -33,11 +33,11 @@
       animation: 0.8s ease-in-out cardRotation;
 
       &__Anim {
-        width: 30vmax;
+        width: 40vmax;
         height: 25vmax;
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 5vmax;
         visibility: hidden;
       }
       .ConditionBoxDiv {
