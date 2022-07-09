@@ -63,11 +63,13 @@ const SearchInput = () => {
 
   useEffect(() => {
     weatherStore.error && setTimeout(discardError, 3000);
+    // eslint-disable-next-line
   }, [weatherStore.error]);
 
   useEffect(() => {
     handleFilteredSuggestions();
-    console.log(filteredSuggestions);
+
+    // eslint-disable-next-line
   }, [searchStore]);
 
   return (

@@ -1,4 +1,3 @@
-import SearchInput from "../../components/SearchInput";
 import WeatherCardList from "../../components/WeatherCardList";
 import { SearchContextProvider } from "../../context/SearchContext/searchContext";
 import { WeatherContextProvider } from "../../context/WeatherContext/weatherContext";

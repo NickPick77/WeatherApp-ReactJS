@@ -84,6 +84,7 @@ export const useFormattedDate = (APIdate) => {
       day: dayName,
       month: monthName,
     });
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
@@ -91,6 +92,7 @@ export const useFormattedDate = (APIdate) => {
       formattedDay: date.day,
       formattedMonth: date.month,
     });
+    // eslint-disable-next-line
   }, [date]);
 
   return formattedDate;

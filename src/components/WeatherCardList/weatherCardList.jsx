@@ -12,6 +12,7 @@ const WeatherCardList = () => {
 
   useEffect(() => {
     updateData((prev) => (prev ? prev : "Catania"));
+    // eslint-disable-next-line
   }, []);
 
   return (
